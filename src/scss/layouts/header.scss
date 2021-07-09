@@ -1,0 +1,81 @@
+.header{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 300px;
+    height: 100%;
+    background-image: url(https://assets.website-files.com/559f85c38bde14cf4b3723cf/55d5b8d8b4ce9258656a0dd5_Beans.jpg);
+    background-position: 50% 50%;
+    text-align: center;
+    &::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position:absolute;
+        left:0;
+        top:0;
+        background-color: rgba(61, 56, 51, 0.9);
+        background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(61, 56, 51, 0)), to(#3d3833));
+        background-image: linear-gradient(0deg, rgba(61, 56, 51, 0), #3d3833);
+    }
+    &__nav{
+        position: relative;
+        z-index: 1;
+        height: 100%;
+    }
+    &__logo{
+        display: block;
+        width: 100%;
+        padding-top: 35px;
+        padding-bottom: 25px;
+        float: none;
+        text-align: center;
+        img{
+            height: 45px;
+            margin-bottom: 13px;
+            opacity: 0.3;
+        }
+        &__text{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-family: Oswald, sans-serif;
+            color: #e88f2a;
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+        &__subtitle{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            opacity: 0.3;
+            font-size: 10px;
+            line-height: 14px;
+            font-weight: 300;
+            letter-spacing: 3px;
+            font-family: Oswald, sans-serif;
+            color: #fff;
+        }
+    }
+    &__menu{
+        margin: 35px 0;
+
+        &__link{
+            display: block;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            transition: background-color 200ms ease;
+            font-family: Oswald, sans-serif;
+            color: #fff;
+            font-size: 14px;
+            line-height: 10px;
+            font-weight: 400;
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            &:hover{
+                background-color: #e88f2a;
+                color: #fff;
+            }
+        }
+    }
+}

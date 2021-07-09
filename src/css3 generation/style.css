@@ -1,0 +1,103 @@
+:root {
+    --headerheight: 115px;
+    --basecolor: #111;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+body{
+    font:400 15px/1.5 monospace, serif;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.parallax {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.parallax .caption {
+    color: white;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+.parallax .caption span {
+    padding: 18px;
+    background-color: var(--basecolor);
+}
+.parallax .caption .more-scroll{
+    font-size: 25px;
+    color: #f7f7f7;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+header{
+    background: #333;
+    padding: 15px;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1;
+    width: 100%;
+}
+nav{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    place-items: center;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+    justify-content: center;
+    text-transform: uppercase;
+}
+nav a{
+    color: #fcfcfc;
+    text-decoration: none;
+    transition: color .6s ease;
+}
+nav a:hover{
+    color: yellowgreen;
+}
+.section{
+    padding: 15px;
+    height: 100vh;
+    color: #e7e7e7;
+    display: grid;
+    place-items: center;
+    scroll-margin-top: var(--headerheight);
+    scroll-snap-align: start;
+}
+#section1{
+    background-image: url(https://www.w3schools.com/howto/img_parallax.jpg);
+}
+#section2,#section6{
+    color: #777;
+    background-color: white;
+    padding: 50px 80px;
+}
+#section3{
+    background-image: url(https://www.w3schools.com/howto/img_parallax2.jpg);
+}
+#section4{
+    color: #ddd;
+    background-color: #282e34;
+    padding: 50px 80px;
+}
+#section5{
+    background-image: url(https://www.w3schools.com/howto/img_parallax3.jpg);
+}
+#section7{
+    background-image: url(https://i.ytimg.com/vi/sjCWGHQNaUo/maxresdefault.jpg);
+}
