@@ -74,7 +74,7 @@
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-.header__menu__link:hover {
+.header__menu__link:hover, .header__menu__link.active {
   background-color: #e88f2a;
   color: #fff;
 }

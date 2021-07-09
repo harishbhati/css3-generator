@@ -72,7 +72,7 @@
             text-align: center;
             letter-spacing: 1px;
             text-transform: uppercase;
-            &:hover{
+            &:hover,&.active{
                 background-color: #e88f2a;
                 color: #fff;
             }
