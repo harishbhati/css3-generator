@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/layouts/header.css">
     <link rel="stylesheet" href="dist/css/layouts/layout.css">
-    <script type=module src="main.js"></script>
 </head>
 <body>
     <my-header></my-header>
@@ -40,68 +39,13 @@
         <section class="section block-pad">
             <div class="caption">
                 <div class="section__intro satisfy">Let's</div>
-                <h2>List Of Tools</h2>
+                <h2>List Of Tools <span class="list__count satisfy"></span></h2>
             </div>
-                <div class="card__list">
-                <my-card></my-card>
-                <figure class="card">
-                    <img src="src/images/square-shadow.png" class="card__img">
-                    <figcaption class="card__caption">
-                        <h3 class="card__title satisfy">Box Shadow</h3>
-                        <p class="card__dis">Experiment with the border-radius property with this generator. See how the radius changes with different options selected.</p>
-                        <a href="#" class="card__more">View Generator<span class="card__arrow">&#8594;</span></a>
-                    </figcaption>
-                </figure>
-                <figure class="card">
-                    <img src="src/images/text-height.png" class="card__img">
-                    <figcaption class="card__caption">
-                        <h3 class="card__title satisfy">Text Shadow</h3>
-                        <p class="card__dis">Experiment with the border-radius property with this generator. See how the radius changes with different options selected.</p>
-                        <a href="#" class="card__more">View Generator<span class="card__arrow">&#8594;</span></a>
-                    </figcaption>
-                </figure>
-                <figure class="card">
-                    <img src="src/images/button.png" class="card__img">
-                    <figcaption class="card__caption">
-                        <h3 class="card__title satisfy">Button Generator</h3>
-                        <p class="card__dis">Experiment with the border-radius property with this generator. See how the radius changes with different options selected.</p>
-                        <a href="#" class="card__more">View Generator<span class="card__arrow">&#8594;</span></a>
-                    </figcaption>
-                </figure>
-                <figure class="card">
-                    <img src="src/images/font.png" class="card__img">
-                    <figcaption class="card__caption">
-                        <h3 class="card__title satisfy">@Font Face</h3>
-                        <p class="card__dis">Experiment with the border-radius property with this generator. See how the radius changes with different options selected.</p>
-                        <a href="#" class="card__more">View Generator<span class="card__arrow">&#8594;</span></a>
-                    </figcaption>
-                </figure>
-                <figure class="card">
-                    <img src="src/images/gradient.png" class="card__img">
-                    <figcaption class="card__caption">
-                        <h3 class="card__title satisfy">Gradient Generator</h3>
-                        <p class="card__dis">Experiment with the border-radius property with this generator. See how the radius changes with different options selected.</p>
-                        <a href="#" class="card__more">View Generator<span class="card__arrow">&#8594;</span></a>
-                    </figcaption>
-                </figure>
-                <figure class="card">
-                    <img src="src/images/transition.png" class="card__img">
-                    <figcaption class="card__caption">
-                        <h3 class="card__title satisfy">Transition Generator</h3>
-                        <p class="card__dis">Experiment with the border-radius property with this generator. See how the radius changes with different options selected.</p>
-                        <a href="#" class="card__more">View Generator<span class="card__arrow">&#8594;</span></a>
-                    </figcaption>
-                </figure>
-                <figure class="card">
-                    <img src="src/images/pantone.png" class="card__img">
-                    <figcaption class="card__caption">
-                        <h3 class="card__title satisfy">Color Palets</h3>
-                        <p class="card__dis">Experiment with the border-radius property with this generator. See how the radius changes with different options selected.</p>
-                        <a href="#" class="card__more">View Generator<span class="card__arrow">&#8594;</span></a>
-                    </figcaption>
-                </figure>
-            </div>
+            <div class="card__list"></div>
         </section>
     </main>
-</body>
+</body> 
+<script type="text/javascript" src="main.js"></script>
+<script type=module src="header.js"></script>
+<script type="text/javascript" src="card.js"></script>
 </html>
