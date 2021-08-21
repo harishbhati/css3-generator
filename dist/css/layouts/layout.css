@@ -248,6 +248,16 @@ body {
   grid-gap: 65px 25px;
   padding-bottom: 125px;
 }
+@media (max-width: 1399px) {
+  .card__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 991px) {
+  .card__list {
+    grid-template-columns: 1fr;
+  }
+}
 
 .card {
   text-align: center;
@@ -288,6 +298,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 2px 1fr;
   grid-gap: 60px;
+}
+@media (max-width: 1199px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 .grid__item {
   width: 100%;
