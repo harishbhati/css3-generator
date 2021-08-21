@@ -10,57 +10,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../dist/css/layouts/header.css">
     <link rel="stylesheet" href="../../dist/css/layouts/layout.css">
-    <script type=module src="main.js"></script>
 </head>
 <body>
     <my-header></my-header>
     <main class="main"> 
-        <section class="section generation__section grid bg-grey">
+        <section class="section generation__section grid">
             <div class="grid__item">
                 <div class="slidecontainer">
                     <div class="range__group">
                         <span class="range__group__label">All Corner</span>
-                        <input type="range" min="1" max="100" value="50" step="10" class="range__group__control" id="radiusAll">
+                        <input type="range" min="0" max="200" value="0" step="10" class="range__slider all__range range__group__control" id="radiusAll">
+                        <span class="range__slider-value" id="radiusAllInput">0</span>
                     </div>
-                    <div class="divider"></div>
+                    <div class="divider divider__lg"></div>
                     <div class="range__group">
                         <span class="range__group__label">Top Left</span>
-                        <input type="range" min="1" max="100" value="50" step="10" class="range__group__control" id="radiusTopLeft">
+                        <input type="range" min="0" max="200" value="0" step="10" class="range__slider range__group__control" id="radiusTopLeft">
+                        <span class="range__slider-value" id="radiusTopLeftInput">0</span>
                     </div>
                     <div class="range__group">
                         <span class="range__group__label">Top Right</span>
-                        <input type="range" min="1" max="100" value="50" step="10" class="range__group__control" id="radiusTopRight">
+                        <input type="range" min="0" max="200" value="0" step="10" class="range__slider range__group__control" id="radiusTopRight">
+                        <span class="range__slider-value" id="radiusTopRightInput">0</span>
                     </div>
                     <div class="range__group">
                         <span class="range__group__label">Bottom Right</span>
-                        <input type="range" min="1" max="100" value="50" step="10" class="range__group__control" id="radiusBottomRight">
+                        <input type="range" min="0" max="200" value="0" step="10" class="range__slider range__group__control" id="radiusBottomRight">
+                        <span class="range__slider-value" id="radiusBottomRightInput">0</span>
                     </div>
                     <div class="range__group">
                         <span class="range__group__label">Bottom Left</span>
-                        <input type="range" min="1" max="100" value="50" step="10" class="range__group__control" id="radiusBottomLeft">
+                        <input type="range" min="0" max="200" value="0" step="10" class="range__slider range__group__control" id="radiusBottomLeft">
+                        <span class="range__slider-value" id="radiusBottomLeftInput">0</span>
                     </div>
 
-                    <div class="divider"></div>
-                </div>
-                <div class="borderBg__group">
-                    <div class="range__group">
-                        <span class="range__group__label">Border Width</span>
-                        <input type="number"class="range__group__control" id="borderWidth">
-                    </div>
-                    <div class="range__group">
-                        <span class="range__group__label">Border Style</span>
-                        <input type="number"class="range__group__control" id="borderStyle">
-                    </div>
-                    <div class="range__group">
-                        <span class="range__group__label">Border Color</span>
-                        <input type="number"class="range__group__control" id="borderColor">
-                    </div>
-                    <div class="range__group">
-                        <span class="range__group__label">BG Color</span>
-                        <input type="number"class="range__group__control" id="bgColor">
-                    </div>
+                    
                 </div>
             </div>
+            <div class="divider divider__hr"></div>
             <div class="grid__item">
                 <div class="preview__holder">
                     <div class="modify__component"></div>
@@ -69,15 +56,20 @@
                         <input type="checkbox" checked="true" id="opt_moz"><label for="opt_moz"> Moz</label>
                     </div>
                 </div>
-                <div class="code__output">
+                <div class="output">
                     <span>CSS Code to copy</span>
-                    <pre id="codeCopy"></pre>
+                    <textarea class="code__output">Copy css from here</textarea>
                     <div class="button__holder">
-                        <a href="#" class="copy__button"><span>icon</span>Copy</a>
+                        <a href="#" class="button copy__btn">Copy CSS</a>
+                        <a href="#" class="button reset__btn">Reset CSS</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 </body>
+<script type="text/javascript" src="main.js"></script>
+<script type=module src="header.js"></script>
+<script type="text/javascript" src="borderRadius.js"></script>
+<script type="text/javascript" src="reset.js"></script>
 </html>
